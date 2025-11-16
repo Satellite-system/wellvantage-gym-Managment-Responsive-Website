@@ -1,0 +1,33 @@
+.buttonComponentContainer {
+   padding: 10px 20%;
+   background-color: #28A745;
+   border-radius: 15px;
+   cursor: pointer;
+   display: inline-block;
+   transition: all 0.2s ease;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+   user-select: none;
+}
+
+/* Hover effect */
+.buttonComponentContainer:hover {
+   background-color: #23963e;
+   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+   transform: translateY(-2px);
+}
+
+/* Click (active) effect */
+.buttonComponentContainer:active {
+   background-color: #1f7f35;
+   transform: translateY(1px);
+   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttonComponentTitle {
+   font-family: 'Roboto Flex';
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: #FFFFFF;
+}

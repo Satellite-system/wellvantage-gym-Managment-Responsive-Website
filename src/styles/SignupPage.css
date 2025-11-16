@@ -1,0 +1,187 @@
+.container {
+   display: flex;
+   flex-direction: row;
+   height: 100vh;
+   flex: 1;
+   overflow: hidden;
+}
+
+.leftBox {
+   background-color: #28A745;
+   flex: 0.6;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.rightBox {
+   flex: 1;
+}
+
+.rightBoxSignUp {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.wellvantageLogo {
+   width: 30%;
+   height: auto;
+}
+
+.title {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-size: 31px;
+   line-height: 35px;
+   letter-spacing: 0%;
+   text-align: center;
+   color: #333333;
+   margin: 0;
+   margin-bottom: 5vh;
+}
+
+.subTitle {
+   font-weight: 600;
+   font-size: 25px;
+   letter-spacing: 0%;
+   text-align: center;
+   color: #333333;
+   margin: 0;
+   margin-bottom: 20vh;
+}
+
+.signUpBox {
+   box-shadow: 0px 0px 2px 2px #D9D9D9;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 8px 25px;
+   margin-bottom: 20vh;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.googleIcon {
+   height: 3vh;
+   width: auto;
+}
+
+.signupTxt {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 25px;
+   line-height: 24px;
+   letter-spacing: 0%;
+   color: #333333;
+   margin-left: 1vw;
+}
+
+.rightBoxDetails {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   padding: 5vh 4vw;
+   padding-bottom: 0;
+   height: 100vh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.title2 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   font-size: 31px;
+   line-height: 35px;
+   letter-spacing: 0%;
+   text-align: center;
+   color: #333333;
+   margin: 0;
+   margin-bottom: 1vh;
+}
+
+.subTitle2 {
+   font-family: 'Poppins';
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 24px;
+   letter-spacing: 0%;
+   color: #333333
+}
+
+.formTitleTxt {
+   font-family: 'Poppins';
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 24px;
+   letter-spacing: 0%;
+   color: #737373
+}
+
+.inputBoxes {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.policyCheckBox {
+   border-radius: 50%;
+}
+
+.bottomContainerBox {
+   margin: 4vh 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 10vh;
+   gap: 10px
+}
+
+.round-checkbox {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   font-size: 16px;
+   gap: 8px;
+}
+
+/* Hide default checkbox */
+.round-checkbox input {
+   display: none;
+}
+
+/* Custom circle */
+.round-checkbox .checkmark {
+   width: 15px;
+   height: 15px;
+   border: 2px solid #4b5563;
+   border-radius: 50%;
+   /* Makes it round */
+   display: inline-block;
+   transition: all 0.2s ease-in-out;
+   position: relative;
+}
+
+/* When checked */
+.round-checkbox input:checked+.checkmark {
+   background-color: #3b82f6;
+   border-color: #3b82f6;
+}
+
+/* Tick mark */
+.round-checkbox input:checked+.checkmark::after {
+   content: "";
+   position: absolute;
+   left: 6px;
+   top: 3px;
+   width: 4px;
+   height: 8px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+}
