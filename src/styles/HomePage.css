@@ -1,0 +1,119 @@
+.container {
+   display: flex;
+   flex-direction: row;
+}
+
+.rightSection {
+   flex: 1;
+   height: 100vh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.homePageTitleBox {
+   background-color: #F9F9FA;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 9px 35px;
+   padding-top: 30px;
+}
+
+.homePageTitle {
+   font-family: 'Poppins';
+   font-weight: 600;
+   font-size: 31px;
+   line-height: 20px;
+   letter-spacing: 0px;
+   margin: 0;
+}
+
+.homePageAddItem {
+   height: 30px;
+   width: 30px;
+}
+
+.homePageSecondaryTitleContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0 20px;
+   border-bottom: 1px #737373 solid;
+   width: 35%;
+   margin-top: 30px;
+}
+
+.homePageSecondaryTitleActive {
+   font-family: "Poppins";
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 28px;
+   letter-spacing: 0px;
+   color: #28A745;
+   margin: 0;
+   padding-bottom: 10px;
+   border-bottom: 3px #28A745 solid;
+   padding-right: 10px;
+}
+
+.homePageSecondaryTitleInActive {
+   font-family: "Poppins";
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 28px;
+   letter-spacing: 0px;
+   color: #333333;
+   margin: 0;
+   padding-bottom: 10px;
+}
+
+.homePageSingleRow {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 10px 20px;
+   margin-top: 30px;
+}
+
+.homePageSingleRowInner {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 85%;
+}
+
+.homePageUserCounts {
+   margin: 0 20px;
+   font-family: "Poppins";
+   font-weight: 400;
+   margin-top: 15px;
+   font-style: Italic;
+   font-size: 15px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: #333333;
+}
+
+.homePageUserTable {
+   margin: 5px 20px;
+   border: 2px solid #F1F1F1;
+}
+
+.homePageUserTableTitle {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 5px 40px;
+   box-shadow: 0px 0px 4px 0px #A0A0A042;
+   background-color: #FFFDFD;
+}
+
+.homePageUserTableTitleTxt {
+   font-family: "Poppins";
+   font-weight: 700;
+   font-style: Bold;
+   font-size: 16px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: #474747;
+}

@@ -1,0 +1,18 @@
+.DropdownComponentContainer {
+   background-color: #F6F6F8;
+   box-shadow: 0px 0px 2px 2px #D9D9D9;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 10px;
+   width: 100px;
+}
+
+.DropdownComponentLabel {
+   font-family: "Poppins";
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 18px;
+   line-height: 26px;
+   letter-spacing: 0%;
+   color: #737373;
+}

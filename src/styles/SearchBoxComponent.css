@@ -1,0 +1,29 @@
+.SearchBoxComponentContainer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   box-shadow: 0px 0px 2px 2px #D9D9D9;
+   border-radius: 8px;
+   background-color: #F6F6F8;
+   gap: 10px;
+   padding: 10px 15px;
+   width: 63%;
+}
+
+.SearchBoxComponentIcon {
+   height: 20px;
+   width: 20px;
+}
+
+.SearchBoxComponentInput {
+   border: none;
+   background: none;
+   width: 80%;
+}
+
+.SearchBoxComponentInput:focus {
+   border: none;
+   outline: none;
+   box-shadow: none;
+   /* removes blue glow on some browsers */
+}
