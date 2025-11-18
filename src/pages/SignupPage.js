@@ -25,16 +25,16 @@ function SignUpPage() {
     }
   };
 
-  const handleLogout = () => {
-    signOut(auth)
-      .then(() => {
-        console.log("User signed out.");
-        // Update state or redirect
-      })
-      .catch((error) => {
-        console.error("Logout Error:", error.message);
-      });
-  };
+  // const handleLogout = () => {
+  //   signOut(auth)
+  //     .then(() => {
+  //       console.log("User signed out.");
+  //       // Update state or redirect
+  //     })
+  //     .catch((error) => {
+  //       console.error("Logout Error:", error.message);
+  //     });
+  // };
 
   return (
     <div className="container">
