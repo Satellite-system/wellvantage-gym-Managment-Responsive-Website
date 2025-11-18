@@ -2,9 +2,109 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   align-items: center;
+   padding: 10px 30px;
+   box-shadow: 0px 0px 1px 1px #D9D9D9;
+   cursor: pointer;
+}
+
+.leadItemContainer:hover {
+   background-color: #D9D9D9;
+}
+
+.leadItemAvatarImg {
+   height: 30px;
+   width: auto;
+}
+
+.leadItemNameContainer {
+   display: flex;
+   flex-direction: row;
+   gap: 25px;
+   width: 15%;
 }
 
 .leadItemActionContainer {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
+   width: 10%;
+}
+
+.leadItemBrownContainer {
+   background-color: #FFDBDB;
+   margin: 0;
+   padding: 2px 5px;
+   width: 7%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.leadItemGreenContainer {
+   background-color: #C9E8FF;
+   margin: 0;
+   padding: 2px 5px;
+   width: 7%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.leadItemOtherContainer {
+   background-color: #FFECCD;
+   margin: 0;
+   padding: 2px 5px;
+   width: 7%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.leadItemColorTxt {
+   font-family: "Poppins";
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 16px;
+   line-height: 100%;
+   letter-spacing: 0%;
+}
+
+.leadItemField {
+   width: 10%;
+}
+
+.leadItemFieldName {
+   font-family: "Poppins";
+   font-weight: 400;
+   font-size: 16px;
+   color: #2563EB;
+   margin: 0;
+}
+
+.leadItemFieldDate {
+   width: 15%;
+}
+
+.leadItemFieldFollowUpBox {
+   background-color: #FFECCD;
+   width: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px 0;
+}
+
+.leadItemFieldFollowUpBoxTxt {
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   color: #F59E0B;
+   margin: 0;
+}
+
+.leadItemActionContainer img {
+   height: 25px;
+   width: auto;
 }

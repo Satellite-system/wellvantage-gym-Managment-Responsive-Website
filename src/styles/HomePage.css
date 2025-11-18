@@ -39,7 +39,7 @@
    justify-content: space-between;
    margin: 0 20px;
    border-bottom: 1px #737373 solid;
-   width: 35%;
+   width: 22%;
    margin-top: 30px;
 }
 
@@ -102,7 +102,6 @@
 .homePageUserTableTitle {
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
    padding: 5px 40px;
    box-shadow: 0px 0px 4px 0px #A0A0A042;
    background-color: #FFFDFD;
@@ -116,4 +115,60 @@
    line-height: 100%;
    letter-spacing: 0%;
    color: #474747;
+}
+
+.homePageUserTableTitleTxt:first-child {
+   margin-left: 40px;
+   width: 14%;
+}
+
+.homePageUserTableTitleTxt:nth-child(2) {
+   width: 15%;
+}
+
+.homePageUserTableTitleTxt:nth-child(3) {
+   width: 15%;
+}
+
+.homePageUserTableTitleTxt:nth-child(4) {
+   width: 25%;
+}
+
+.homePageUserTableTitleTxt:nth-child(5) {
+   width: 20%;
+}
+
+.homePagePaginationContainer {
+   padding: 10px 20px;
+   font-family: Poppins;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 17px;
+   line-height: 22px;
+   letter-spacing: 0px;
+   text-align: right;
+   color: #333333;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 3vw;
+}
+
+.homePagePaginationCounter {
+   display: flex;
+   justify-content: space-between;
+   width: 15%;
+   align-items: center;
+}
+
+.homePagePaginationCounterSelected {
+   background-color: #28A745;
+   color: #fff;
+   padding: 0 5px;
+}
+
+.homePagePaginationCounter img {
+   height: 10px;
+   width: auto;
 }
