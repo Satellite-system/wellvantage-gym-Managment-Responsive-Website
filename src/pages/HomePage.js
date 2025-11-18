@@ -8,6 +8,8 @@ import SearchBoxComponent from "../components/SearchBoxComponent";
 import DropdownComponent from "../components/DropdownComponent";
 import SortItemsComponent from "../components/SortItemsComponent";
 import crossIcon from "./../assets/icons/cross.svg";
+import previousIcon from "./../assets/icons/previous.png";
+import nextIcon from "./../assets/icons/next.png";
 
 function HomePage() {
   const [user, setUser] = useState(null);
@@ -84,6 +86,21 @@ function HomePage() {
               />
             ))}
         </div>
+
+        {user && (
+          <div className="homePagePaginationContainer">
+            Showing 1 to {user.limit} of {user.total} entries
+            <div className="homePagePaginationCounter">
+              <img src={previousIcon} alt="Previous Icon" />
+              <span>1</span>
+              <span>2</span>
+              <span className="homePagePaginationCounterSelected">3</span>
+              <span>.....</span>
+              <span>{Math.ceil(user.total / user.limit)}</span>
+              <img src={nextIcon} alt="Next Icon" />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -4,9 +4,37 @@ import wellvantageImg from "./../assets/images/wellvantage.svg";
 import googleIcon from "./../assets/icons/google.svg";
 import InputBoxComponent from "../components/InputBoxComponent";
 import ButtonComponent from "../components/ButtonComponent";
+import { useNavigate } from "react-router-dom";
+import { signInWithPopup, signOut } from "firebase/auth";
+import { auth, googleProvider } from "./../firebase"; // Adjust path as needed
 
 function SignUpPage() {
-  const [googleSigned, setGoogleSigned] = useState(true);
+  const [googleSigned, setGoogleSigned] = useState(false);
+  const navigate = useNavigate();
+
+  const signInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      // The signed-in user info.
+      const user = result.user;
+      console.log("User signed in:", user);
+      setGoogleSigned(true);
+    } catch (error) {
+      // Handle Errors here.
+      console.error("Google Sign-In Error:", error.message);
+    }
+  };
+
+  const handleLogout = () => {
+    signOut(auth)
+      .then(() => {
+        console.log("User signed out.");
+        // Update state or redirect
+      })
+      .catch((error) => {
+        console.error("Logout Error:", error.message);
+      });
+  };
 
   return (
     <div className="container">
@@ -26,7 +54,7 @@ function SignUpPage() {
               Welcome! Manage, Track and Grow your Gym with Wellvantage.
             </p>
 
-            <div className="signUpBox">
+            <div className="signUpBox" onClick={() => signInWithGoogle()}>
               <img src={googleIcon} alt="google Icon" className="googleIcon" />
               <span className="signupTxt">Continue with Google</span>
             </div>
@@ -62,7 +90,7 @@ function SignUpPage() {
                 <span class="checkmark"></span> I agree to the Privacy Policy.
               </label>
 
-              <ButtonComponent title="Next" />
+              <ButtonComponent title="Next" onClick={() => navigate("/home")} />
             </div>
           </div>
         )}

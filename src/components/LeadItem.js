@@ -5,16 +5,46 @@ import box from "./../assets/icons/Box.svg";
 import whatsappLogo from "./../assets/icons/logos_whatsapp-icon.svg";
 import "./../styles/LeadItem.css";
 
+const InterestLevelComponent = ({ interest }) => {
+  const className =
+    interest === "Brown" || interest === "Green"
+      ? `leadItem${interest}Container`
+      : "leadItemOtherContainer";
+
+  const label =
+    interest === "Brown"
+      ? "🔥Hot"
+      : interest === "Green"
+      ? "❄️ Cold"
+      : "🌡️Warm";
+
+  return (
+    <div className={className}>
+      <span className="leadItemColorTxt"></span>
+      {label}
+    </div>
+  );
+};
+
 function LeadItem({ name, assignedTo, lastInteracted, eyeColor, id }) {
   return (
     <div className="leadItemContainer">
-      <img src={avatarPlaceholder} alt="" />
-
       {/* <span>{id}</span> */}
-      <span>{name}</span>
-      <span>{eyeColor}</span>
-      <span>{assignedTo}</span>
-      <span>{lastInteracted}</span>
+      <div className="leadItemNameContainer">
+        <img
+          src={avatarPlaceholder}
+          alt="avatar"
+          className="leadItemAvatarImg"
+        />
+        <span className="leadItemFieldName">{name}</span>
+      </div>
+      <InterestLevelComponent interest={eyeColor} />
+      <span className="leadItemField">{assignedTo}</span>
+      <span className="leadItemFieldDate">26 Oct 2025</span>
+
+      <div className="leadItemFieldFollowUpBox">
+        <span className="leadItemFieldFollowUpBoxTxt">Need Follow Up</span>
+      </div>
 
       <div className="leadItemActionContainer">
         <img src={whatsappLogo} alt="Whatsapp Logo" />

@@ -68,7 +68,7 @@ function LeftNavigationBar() {
 
       <div className="leftNavigationBarlistItemContainerBox">
         {listItems.map((item) => (
-          <div className="listItemContainer">
+          <div className="listItemContainer" key={item.title}>
             <img
               src={item.icon}
               alt="Item"
