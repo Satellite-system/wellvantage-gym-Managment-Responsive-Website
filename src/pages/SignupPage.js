@@ -5,7 +5,7 @@ import googleIcon from "./../assets/icons/google.svg";
 import InputBoxComponent from "../components/InputBoxComponent";
 import ButtonComponent from "../components/ButtonComponent";
 import { useNavigate } from "react-router-dom";
-import { signInWithPopup, signOut } from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "./../firebase"; // Adjust path as needed
 
 function SignUpPage() {
